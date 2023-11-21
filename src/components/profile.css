@@ -1,0 +1,71 @@
+/* Default styles for larger screens */
+.profile-container {
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Adjust the height as needed */
+    background-color: #f0f0f0; /* Set background color */
+    background-color: darkolivegreen;
+    
+  }
+  
+  .profile-content {
+    width: 40%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align content vertically within the profile-content */
+    border: 1px solid #ccc; /* Add a border */
+    padding: 20px; /* Add padding */
+    background-color: black;
+    border-radius: 30px;
+
+
+  }
+  
+  .profile-image {
+    
+    margin-right: 20px; /* Adjust the margin as needed for spacing */
+  }
+  
+  
+  .profile-info {
+    width: 70%;
+    text-align: left; /* Align text to the left */
+    color: aliceblue;
+  }
+  .user-name span{
+    padding-right: 20px;
+
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .profile-container {
+      height: 100vh;
+      padding: 20px; /* Add some padding for better spacing on smaller screens */
+    }
+  
+    .profile-content {
+      flex-direction: column; /* Stack content vertically on smaller screens */
+      width: 80%; /* Adjust the width as needed */
+      height: auto;
+    }
+  
+    .profile-image {
+      margin-right: 0; /* Remove the margin on smaller screens */
+      margin-bottom: 10px; /* Add some spacing between the image and text */
+    }
+  
+    .profile-info {
+      width: 100%;
+      text-align: center; /* Center text on smaller screens */
+    }
+  
+    .user-name span {
+      padding-right: 0; /* Remove the padding on smaller screens */
+      display: block; /* Display the span as a block for better spacing */
+      margin-bottom: 10px; /* Add some spacing between the name and other information */
+    }
+  }
+  
